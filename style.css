@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+
+:root { /*Variaveis de cores e fontes*/
+    /*sempre comecar com -- depois o nome da variavel*/
+
+    --cor0: #ebe5c5;
+    --cor1: #428C6A;
+    --cor2: #34a18d;
+    --cor3: #125959;
+    --cor4: #c5ebd6;
+    --cor5: #cff1df;
+    
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-times: Times New Roman, Times, serif;
+    
+}
+
+* { /*se por aqui, tudo tera essa formatação*/
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: var(--cor4);
+    font-family:var(--fonte-padrao) ;
+    text-align: justify;
+}
+
+header{
+   
+    background-image: url("imagens/WhatsApp-Image-2019-10-22-at-14.38.21.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /*tamanho dentro do fundo */
+
+    /*background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));*/
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    
+}
+
+.logo {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    transform: translateY(-50%); /*centralizar verticalmente o centro*/
+    height: 20vw;
+    max-height: 220px; /*garante que fique ate esse tamanho*/
+    width: auto;
+}
+
+
+header > p{
+    color:white;
+    
+
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-times);
+    /*margin-bottom: 10px;*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253); 
+    
+    
+}
+
+header > h3{
+    color: white;
+    font-family: var(--fonte-times);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253); /*sombra*/
+    padding-bottom: 10px; /*mudei aqui*/
+    height: 50px;
+    letter-spacing: 1.7px; /*espaçamento entre as letras*/
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+nav{
+   
+    position: absolute;
+    bottom: 10%;
+    /*padding: 100px 20px 10px 10px; /*para o menu nao ficar tao grudado nas bordinhas*/ 
+    font-weight: bold; /*negrito*/
+    width: 400px; 
+    height: 8px;
+    
+    
+}
+
+nav > a{ /*para os links que estao dentro dele*/
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;/*arredondar o negocinho branco*/
+    /*transition-duration: .5s; serve pra ter um delay ao passar o mouse*/
+    font-size: 1.1em;
+   
+}
+
+nav > a:hover{ /*mexendo no menu cores e aquele negocio de ficar branco*/
+    background-color: var(--cor4);
+    color: var(--cor3);
+    
+}
+
+main { 
+    
+    min-width: 300px;
+    max-width: 1300px; /*o que vai aparecer na tela*/
+    margin:auto; /*pra quando estiver vendo em tela cheia ela nao crescer*/
+    background-color: white;
+    margin-bottom: 0px; /*para nao grudar no footer*/
+    padding: 20px; /*tava muito grudado o texto com a borda*/
+   /* border-bottom-left-radius: 10px;/*arredondamento nas pontas debaixo esquerda*/
+    /*border-bottom-right-radius: 10px;/*arredondamento nas pontas direita*/
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;/*sombra*/ 
+    position: relative; /* Para posicionar o filho absoluto dentro dele */
+
+}
+
+.lixeira {
+    position: absolute;
+    bottom: 0px; /* distancia do fundo */
+    right: 10px;  /* distancia da direita */
+    width: 100px; /* ajuste conforme necessário */
+    opacity: 0.9; /* opcional: leve transparência */
+
+    }
+
+main p { /*geral*/
+    margin:15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*espaco de 1 dedo do paragrafo*/
+    line-height: 1.5em; /*espacamento entre linhas*/
+    font-family: 1em; /*engrossamento do texto*/
+}
+
+.clear {
+    clear: both; /*limpou o caminho para que o proximo paragrafo viesse embaixo*/
+}
+
+main strong{
+    color: rgba(0, 0, 0, 0.836);
+}
+
+main a{
+    text-decoration: none; /*sublinhado*/
+    font-weight: bold; /*negrito*/
+    color: var(--cor3)
+}
+ 
+main a:hover{ /*quando passar o mouse*/
+    text-decoration: underline; /*quando passar o mouse fica com sublinhado*/
+    color: var(--cor1)
+}
+
+main img.jbf{ /*a imagem ficou no centro (poe blok antes) e pequena*/ 
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+
+}
+
+main  h1{
+    font-family: var(--fonte-times);
+    padding: 0px 0px 20px 0px;
+    background-image: linear-gradient(to right, #61b990, transparent);
+    color: rgba(0, 0, 0, 0.753);
+    text-indent: 8px;
+    font-size: 1.8em;
+
+}
+main h2{
+    font-family: var(--fonte-times);
+    padding: 0px 0px 10px 0px;
+    background-image: linear-gradient(to right, #61b990, transparent);
+    color: rgba(0, 0, 0, 0.753);
+    text-indent: 8px;
+    font-size: 1.6em;
+}
+
+
+
+aside {
+    padding: 10px;
+   
+}
+
+ ul{
+    list-style-position: inside;
+    line-height: 1.8em; /*espacamento entre linhas*/
+}
+
+.footer {
+  background-color: #34a18d;
+  color: #fff;
+  padding: 20px 20px; /* antes era 40px – agora mais compacto */
+  font-family: sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* diminui o espaçamento entre as colunas */
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+  margin-bottom: 6px; /* antes 10px */
+}
+
+.footer-box p {
+  margin: 3px 0; /* antes 5px */
+  font-size: 14px; /* deixa o texto levemente mais compacto */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px; /* antes 30px */
+  border-top: 1px solid #444;
+  padding-top: 8px; /* antes 10px */
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
