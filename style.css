@@ -48,8 +48,8 @@ header{
 
 .logo {
     position: absolute;
-    left: 3%;
-    top: 40%;
+    left: 5%;
+    top: 30%;
     transform: translateY(-50%); /*centralizar verticalmente o centro*/
     height: 20vw;
     max-height: 220px; /*garante que fique ate esse tamanho*/
