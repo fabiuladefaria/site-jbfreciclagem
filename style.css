@@ -90,6 +90,7 @@ header > h3{
 nav{
    
     position: absolute;
+    left: 0%;
     bottom: 10%;
     /*padding: 100px 20px 10px 10px; /*para o menu nao ficar tao grudado nas bordinhas*/ 
     font-weight: bold; /*negrito*/
