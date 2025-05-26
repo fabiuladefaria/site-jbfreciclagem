@@ -106,7 +106,7 @@ nav > a{ /*para os links que estao dentro dele*/
     text-decoration: none;
     border-radius: 5px;/*arredondar o negocinho branco*/
     /*transition-duration: .5s; serve pra ter um delay ao passar o mouse*/
-    font-size: 1em;
+    font-size: 1.1em;
    
 }
 
