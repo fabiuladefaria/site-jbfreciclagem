@@ -39,21 +39,20 @@ header{
     /*background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));*/
     min-height: 150px;
     text-align: center;
-    padding-top: 20vw;
+    padding-top: 40px;
     padding-bottom: 10px;
     position: relative;
-   /* padding: 20px;*/
+    padding: 20px;
     
 }
 
 .logo {
     position: absolute;
     left: 3%;
-    top: 30%;
+    top: 40%;
     transform: translateY(-50%); /*centralizar verticalmente o centro*/
     height: 20vw;
     max-height: 220px; /*garante que fique ate esse tamanho*/
-    width: auto;
    
 }
 
@@ -69,7 +68,6 @@ header > h1 {
     font-family: var(--fonte-times);
     /*margin-bottom: 10px;*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253); 
-    margin: 0;
     
     
 }
