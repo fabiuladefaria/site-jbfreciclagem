@@ -81,7 +81,7 @@ header > h3{
     letter-spacing: 1.7px; /*espaçamento entre as letras*/
     position: absolute;
     left: 50%;
-    top: 55%;
+    top: 45%;
     transform: translate(-50%, -50%);
 
 }
