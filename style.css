@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 
-:root { /*Variaveis de cores e fontes*/
-    /*sempre comecar com -- depois o nome da variavel*/
+:root { 
 
     --cor0: #ebe5c5;
     --cor1: #428C6A;
@@ -17,7 +16,7 @@
     
 }
 
-* { /*se por aqui, tudo tera essa formatação*/
+* { 
     margin: 0px;
     padding: 0px;
 }
