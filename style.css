@@ -39,20 +39,21 @@ header{
     /*background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));*/
     min-height: 150px;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    /*padding-top: 40px;
+    padding-bottom: 10px;*/
     position: relative;
+    padding: 20px;
     
 }
 
 .logo {
     position: absolute;
-    left: 5%;
+    left: 3%;
     top: 30%;
     transform: translateY(-50%); /*centralizar verticalmente o centro*/
     height: 20vw;
     max-height: 220px; /*garante que fique ate esse tamanho*/
-    width: auto;
+   
 }
 
 
