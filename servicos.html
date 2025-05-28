@@ -42,6 +42,10 @@
           width: 120px;
         }
 
+        #tabela{
+          overflow-x: auto;
+        }
+
 
     </style>
 
@@ -79,97 +83,85 @@
             <p>Estamos à disposição para agendamentos e esclarecimentos!</p>
 
 
-      <table>
-      <thead>
+      <div id="tabela">
+        <table>
+        <thead>
+            <tr>
+              <th scope="col">Materiais</th>
+              <th scope="col">Valor (R$/kg)</th>
+              <th scope="col">Mínimo para coleta (kg)</th>
+            </tr>
+        </thead>
+        <tbody>
           <tr>
-            <th scope="col">Materiais</th>
-            <th scope="col">Valor (R$/kg)</th>
-            <th scope="col">Mínimo para coleta (kg)</th>
+            <td>Pet</td>
+            <td class="num">R$ 1,20</td>
+            <td class="num">-</td>
           </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Pet</td>
-          <td class="num">R$ 1,20</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>
-          <td>Ferro</td>
-          <td class="num">R$ 0,40</td>
-          <td class="num">500 kg</td>
-        </tr>
-
-        <tr>
-          <td>Plastico Misto</td>
-          <td class="num">R$ 0,40</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>''
-          <td>Sucatão</td>
-          <td class="num">R$ 0,30</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>
-          <td>Papelão</td>
-          <td class="num">R$ 0,40</td>
-          <td class="num">500 kg</td>
-        </tr>
-
-        <tr>
-          <td>Garrafinha</td>
-          <td class="num">R$ 0,40</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>
-          <td>Pet de oleo diesel</td>
-          <td class="num">R$ 0,50</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>
-          <td>Refil</td>
-          <td class="num">R$ 0,30</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>
-          <td>Bateria</td>
-          <td class="num">R$ 0,15</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>
-          <td>Bloco</td>
-          <td class="num">R$ 2,00</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>
-          <td>Aluminio Perfil</td>
-          <td class="num">R$ 4,00</td>
-          <td class="num">-</td>
-        </tr>
-
-        <tr>
-          <td>Latinha</td>
-          <td class="num">R$ 7,50</td>
-          <td class="num">25 kg</td>
-        </tr>
-
-        <tr>
-          <td>Papel terceiro</td>
-          <td class="num">R$ 0,15</td>
-          <td class="num">-</td>
-        </tr>
-
-      </tbody>
-
-    </table>
+          <tr>
+            <td>Ferro</td>
+            <td class="num">R$ 0,40</td>
+            <td class="num">500 kg</td>
+          </tr>
+          <tr>
+            <td>Plastico Misto</td>
+            <td class="num">R$ 0,40</td>
+            <td class="num">-</td>
+          </tr>
+          <tr>''
+            <td>Sucatão</td>
+            <td class="num">R$ 0,30</td>
+            <td class="num">-</td>
+          </tr>
+          <tr>
+            <td>Papelão</td>
+            <td class="num">R$ 0,40</td>
+            <td class="num">500 kg</td>
+          </tr>
+          <tr>
+            <td>Garrafinha</td>
+            <td class="num">R$ 0,40</td>
+            <td class="num">-</td>
+          </tr>
+          <tr>
+            <td>Pet de oleo diesel</td>
+            <td class="num">R$ 0,50</td>
+            <td class="num">-</td>
+          </tr>
+          <tr>
+            <td>Refil</td>
+            <td class="num">R$ 0,30</td>
+            <td class="num">-</td>
+          </tr>
+          <tr>
+            <td>Bateria</td>
+            <td class="num">R$ 0,15</td>
+            <td class="num">-</td>
+          </tr>
+          <tr>
+            <td>Bloco</td>
+            <td class="num">R$ 2,00</td>
+            <td class="num">-</td>
+          </tr>
+          <tr>
+            <td>Aluminio Perfil</td>
+            <td class="num">R$ 4,00</td>
+            <td class="num">-</td>
+          </tr>
+          <tr>
+            <td>Latinha</td>
+            <td class="num">R$ 7,50</td>
+            <td class="num">25 kg</td>
+          </tr>
+          <tr>
+            <td>Papel terceiro</td>
+            <td class="num">R$ 0,15</td>
+            <td class="num">-</td>
+          </tr>
+        </tbody>
+        
+            </table>
+      </div>
 
     <br>
 
