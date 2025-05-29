@@ -189,7 +189,7 @@ main  h1{
 main h2{
     font-family: var(--fonte-times);
     padding: 0px 0px 10px 0px;
-    background-image: linear-gradient(to right, #61b990, transparent);
+    background-image: linear-gradient(to right, #73D99F, transparent);
     color: rgba(0, 0, 0, 0.753);
     text-indent: 8px;
     font-size: 1.6em;
