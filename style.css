@@ -255,3 +255,10 @@ aside {
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width:600px){ /*para responsivo o logo saiu no celular*/
+    header img{
+        display: none;
+    }
+    
+}
