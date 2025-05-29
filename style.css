@@ -150,7 +150,7 @@ main p { /*geral*/
 }
 
 .clear {
-    clear: both; /*limpou o caminho para que o proximo paragrafo viesse embaixo*/
+    clear: both; /*limpou o caminho para que o proximo paragrafo viesse embaixo da imagem*/
 }
 
 main strong{

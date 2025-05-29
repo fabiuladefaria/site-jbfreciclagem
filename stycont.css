@@ -25,7 +25,7 @@ section{
     justify-content: center;
     flex-direction: column;
     padding: 10px 45px;
-    background-color: aqua ;
+    background-color: #73D99F ;
     width: 500px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
 }
@@ -86,7 +86,7 @@ form textarea:focus{
 }
 
 form button:hover{
-    background-color: #34a18d;
+    background-color: #c5ebd6;
     color: #101026;
      
 }
@@ -105,7 +105,6 @@ form button{
     align-items: center;
     justify-content: center;
     min-height: 100hv;
-    background-color: #101026;
     flex-direction: column;
 }
 
@@ -134,7 +133,7 @@ form button{
 }
 
 #obrigado{
-    background-color: #101026;
+    background-color: #73D99F;
     padding: 5%;               
     width: 90%;
     max-width: 600px;          /* Limita a largura máxima */
