@@ -97,6 +97,7 @@ form button{
     border-radius: 20px;
 }
 
+
 /*Pagina obrigado*/
 
 .main{
@@ -142,4 +143,18 @@ form button{
     border-radius: 10px;
     margin: 0 auto;            /* Centraliza horizontalmente */
     box-sizing: border-box;    
+}
+
+@media (max-width: 600px) { /*para deixar o contato responsivo*/
+    section {
+        width: 90%;            /*  telas menores */
+        padding: 20px;         /* reduz o padding */
+    }
+
+    section h2 {
+        font-size: 2rem;       /* ajusta o tamanho do h2 */
+    }
+
+    form input,
+    form textarea
 }
