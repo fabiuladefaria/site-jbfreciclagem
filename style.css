@@ -47,7 +47,7 @@ header{
 
 .logo {
     position: absolute;
-    left: 3%;
+    left: 5%;
     top: 30%;
     transform: translateY(-50%); /*centralizar verticalmente o centro*/
     height: 20vw;
