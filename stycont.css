@@ -131,3 +131,11 @@ form button{
 .btn:hover{
     border-radius: 16px;
 }
+
+#obrigado{
+    background-color: #101026;
+    padding: 70px;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+}
