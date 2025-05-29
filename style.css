@@ -257,8 +257,9 @@ aside {
 }
 
 @media screen and (max-width:600px){ /*para responsivo a logo saiu no celular*/
-    header img{
+    .logo{
         top: 200px;
+        
     }
     
 }
