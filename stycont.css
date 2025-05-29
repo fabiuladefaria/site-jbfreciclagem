@@ -134,8 +134,12 @@ form button{
 
 #obrigado{
     background-color: #101026;
-    padding: 70px;
-    width: 50vw;
-    height: 50vh;
+    padding: 5%;               
+    width: 90%;
+    max-width: 600px;          /* Limita a largura máxima */
+    height: auto;              /* Deixa a altura se ajustar ao conteúdo */
+    min-height: 300px;         /* altura mínima */
     border-radius: 10px;
+    margin: 0 auto;            /* Centraliza horizontalmente */
+    box-sizing: border-box;    
 }
