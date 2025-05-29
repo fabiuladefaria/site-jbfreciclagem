@@ -258,7 +258,7 @@ aside {
 
 @media screen and (max-width:600px){ /*para responsivo a logo saiu no celular*/
     .logo{
-        top: 200px;
+        top: 100px;
         
     }
     
