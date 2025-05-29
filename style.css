@@ -119,7 +119,7 @@ nav > a:hover{ /*mexendo no menu cores e aquele negocio de ficar branco*/
 main { 
     
     min-width: 300px;
-    max-width: px; /*o que vai aparecer na tela*/
+    max-width: 1300px; /*o que vai aparecer na tela*/
     margin:auto; /*pra quando estiver vendo em tela cheia ela nao crescer*/
     background-color: white;
     margin-bottom: 0px; /*para nao grudar no footer*/
