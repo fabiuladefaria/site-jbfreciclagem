@@ -256,16 +256,9 @@ aside {
   text-decoration: underline;
 }
 
-@media screen and (max-width:600px){ /*para responsivo o logo saiu no celular*/
+@media screen and (max-width:600px){ /*para responsivo a logo saiu no celular*/
     header img{
-    position: absolute;
-    left: 1%;
-    top: 50%;
-    transform: translateY(-50%); /*centralizar verticalmente o centro*/
-    height: 20vw;
-    max-height: 220px; /*garante que fique ate esse tamanho*/
-   
-        
+        padding-top: 80%;
     }
     
 }
