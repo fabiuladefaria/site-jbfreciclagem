@@ -11,13 +11,14 @@
 <body>
     <section>
         <h2>Fale conosco</h2>
-        <form action="https://api.staticforms.xyz/submit" method="post">
+        <form id="formContato" action="https://api.staticforms.xyz/submit" method="post">
+
             <label>Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" >
             <label>Email</label>
-            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" >
             <label>Mensagem</label>
-            <textarea name="message" cols="30" rows="10"  placeholder="Digite sua mensagem" required></textarea>
+            <textarea name="message" cols="30" rows="10"  placeholder="Digite sua mensagem" ></textarea>
             <button type="submit">Enviar</button>
 
              <input type="hidden" name="apiKey" value="sf_ckdd8b92e4gj2kaihfj6g2ad">
@@ -26,5 +27,9 @@
         </form>
 
     </section>
+
+<script src="validacao.js"></script>
+
+
 </body>
 </html>

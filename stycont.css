@@ -79,7 +79,7 @@ form textarea:focus{
     cursor: pointer;
     font-size: 16px;
     
-    border: 2px solid black;
+    border: px solid black;
     
     transition: all 1s;
     margin-bottom: 20px;
