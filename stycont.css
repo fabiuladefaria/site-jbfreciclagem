@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #d2b49c;
+  background-color: #c5ebd6;
 }
 .container {
   display: grid;
@@ -24,9 +24,9 @@ body {
 }
 
 .menu-lateral {
-  background-color: #f5f5f5;
+  background-color: #82e07f;
   padding: 40px 20px;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid rgba(0, 0, 0, 0.562);
 }
 
 .menu-lateral ul {
@@ -39,7 +39,7 @@ body {
 
 .menu-lateral ul li a {
   text-decoration: none;
-  color: #8B4513;
+  color:black;
   font-weight: 600;
   font-size: 16px;
   transition: color 0.3s;
@@ -65,7 +65,7 @@ div > nav > ul > li:hover{ /*mexendo no menu cores e aquele negocio de ficar bra
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
   }
@@ -114,7 +114,7 @@ div > nav > ul > li:hover{ /*mexendo no menu cores e aquele negocio de ficar bra
 .info-box div i {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #8B4513;
+  color: #82e07f;
 }
 
 .form-box {
@@ -147,7 +147,7 @@ form input, form textarea {
 }
 
 form button {
-  background-color: #8B4513;
+  background-color: #82e07f;
   color: #fff;
   border: none;
   padding: 10px;
@@ -162,7 +162,7 @@ form button:hover {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .container {
     flex-direction: column;
   }
