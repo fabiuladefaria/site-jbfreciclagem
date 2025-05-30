@@ -1,32 +1,284 @@
 /* Reset e configurações globais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* Corpo da página */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #c5ebd6;
-  padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #c5ebd6;
+    padding: 20px;
 }
 
 /* Container principal - menu + conteúdo */
 .container {
-  display: flex;
-  flex-direction: row;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  width: 100%;
-  max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Garante que nada transborde */
+    width: 100%;
+    max-width: 1000px;
 }
+
+
+/* Menu lateral (para desktop) */
+.menu-lateral {
+    background-color: #82e07f;
+    padding: 40px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.562);
+    width: 15%; /* Largura para desktop */
+}
+
+.menu-lateral ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.1s;
+}
+
+.menu-lateral ul li a:hover {
+    color: white;
+}
+
+.menu-lateral ul li {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.menu-lateral ul li:hover {
+    background-color: #adf3ab;
+    color: #181717;
+}
+
+/* Conteúdo principal (para desktop) */
+.main-content {
+    display: flex;
+    flex-direction: row; /* Para desktop, lado a lado */
+    width: 85%;
+}
+
+/* Caixa de informações (para desktop) */
+.info-box {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 30px;
+    width: 40%; /* Largura para desktop */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border-right: 1px solid #ccc;
+}
+
+.info-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-box div i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #82e07f;
+}
+
+/* Caixa do formulário (para desktop) */
+.form-box {
+    width: 60%; /* Largura para desktop */
+    padding: 40px 30px;
+}
+
+.form-box h2 {
+    color: #125959;
+    margin-bottom: 10px;
+}
+
+.form-box p {
+    margin-bottom: 30px;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none;
+    width: 100%;
+}
+
+form button {
+    background-color: #82e07f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #44c91c;
+}
+
+/* ------------------------------------------- */
+/* Responsividade para telas menores (até 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 0; /* Remove padding do body para a barra verde do menu ir até as bordas */
+        align-items: flex-start; /* Alinha o conteúdo ao topo para o menu ficar visível */
+    }
+
+    .container {
+        flex-direction: column; /* Empilha o menu e o conteúdo principal */
+        width: 100%; /* Ocupa a largura total da tela */
+        max-width: none; /* Remove a limitação de largura */
+        border-radius: 0; /* Remove borda arredondada para ocupar a tela inteira */
+        box-shadow: none; /* Remove a sombra para um visual mais clean em mobile */
+        overflow: visible; /* Garante que o conteúdo quebre normalmente */
+    }
+
+    /* Ajustes específicos para o menu em mobile */
+    .menu-lateral {
+        width: 100%; /* Ocupa a largura total */
+        border-right: none;
+        border-bottom: none; /* Sem borda inferior entre o menu e o container */
+        padding: 20px 0; /* Ajusta o padding horizontal para 0 para os links ficarem mais próximos */
+        background-color: #82e07f; /* Mantém a cor de fundo */
+        /* Na imagem, o menu parece estar fora do "container" principal,
+           então podemos fazer com que o container não tenha bordas e sombra,
+           e o menu seja a primeira coisa na tela, sem borda de container.
+           Se o menu precisar ficar dentro do container, você pode reverter o border-radius e box-shadow do .container.
+           Pelo que vejo na imagem, o menu é uma barra verde no topo.
+        */
+    }
+
+    .menu-lateral ul {
+        flex-direction: row; /* Itens do menu horizontalmente */
+        justify-content: space-around; /* Distribui os itens igualmente no espaço */
+        align-items: center; /* Centraliza verticalmente os itens */
+        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+        gap: 0; /* Remove o gap para que o space-around funcione melhor */
+        padding: 0 10px; /* Um pequeno padding para os lados se desejar */
+    }
+
+    .menu-lateral ul li {
+        padding: 5px 10px; /* Ajusta o padding dos itens do menu */
+        font-size: 1em; /* Tamanho da fonte normal */
+        margin: 0 5px; /* Adiciona uma pequena margem horizontal entre os itens */
+    }
+    .menu-lateral ul li:hover {
+        background-color: transparent; /* Remove o fundo ao passar o mouse para o menu mobile */
+        color: white; /* Mantém a cor da fonte ao passar o mouse */
+    }
+    .menu-lateral ul li a {
+        color: black; /* Cor do texto dos links */
+        white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    }
+    .menu-lateral ul li a:hover {
+        color: white; /* Cor do texto ao passar o mouse */
+    }
+
+    /* Conteúdo principal para mobile */
+    .main-content {
+        flex-direction: column; /* Empilha as caixas de informação e formulário */
+        width: 100%; /* Ocupa a largura total */
+        padding: 0; /* Remove padding extra para o conteúdo interno gerenciar */
+    }
+
+    /* Caixas de informação e formulário para mobile */
+    .info-box,
+    .form-box {
+        width: 100%; /* Ocupa a largura total */
+        border-right: none;
+        border-bottom: none; /* Remove a borda inferior para as seções */
+        padding: 20px; /* Ajusta o padding interno das caixas */
+    }
+
+    .info-box {
+        border-top-left-radius: 10px; /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 10px; /* Arredonda o canto superior direito */
+        margin-top: 20px; /* Espaço entre o menu e o conteúdo */
+    }
+
+    .form-box {
+        border-bottom-left-radius: 10px; /* Arredonda o canto inferior esquerdo */
+        border-bottom-right-radius: 10px; /* Arredonda o canto inferior direito */
+        margin-bottom: 20px; /* Espaço na parte inferior da página */
+    }
+
+
+    .info-box div {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px; /* Espaçamento entre cada item de informação */
+    }
+    .info-box div:last-child {
+        margin-bottom: 0; /* Remove a margem do último item de informação */
+    }
+
+
+    /* Títulos e parágrafos centralizados */
+    .form-box h2,
+    .form-box p {
+        text-align: center;
+    }
+
+    /* Ajuste para o formulário */
+    form {
+        gap: 10px; /* Reduz o espaçamento entre os campos do formulário */
+    }
+}
+
+/* ------------------------------------------- */
+/* Ajustes para telas muito pequenas (ex: iPhones SE antigos) */
+@media (max-width: 375px) {
+    .menu-lateral ul li {
+        margin: 0 3px; /* Reduz a margem horizontal entre os itens do menu */
+    }
+    .info-box div i {
+        font-size: 20px; /* Reduz o tamanho do ícone */
+    }
+    .info-box div strong {
+        font-size: 0.95em; /* Ajusta o tamanho da fonte do título */
+    }
+    .info-box div span {
+        font-size: 0.85em; /* Ajusta o tamanho da fonte do texto de endereço/telefone/email */
+    }
+    .form-box h2 {
+        font-size: 1.5em; /* Reduz o tamanho do título do formulário */
+    }
+    .form-box p {
+        font-size: 0.9em; /* Reduz o tamanho do parágrafo do formulário */
+    }
+}
+
 
 .whatsapp {
   position: fixed;
@@ -51,156 +303,6 @@ body {
   background-color: #39d325;
 }
 
-/* Menu lateral */
-.menu-lateral {
-  background-color: #82e07f;
-  padding: 40px 20px;
-  border-right: 1px solid rgba(0, 0, 0, 0.562);
-  width: 15%;
-}
-
-.menu-lateral ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.menu-lateral ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-size: 16px;
-  transition: color 0.1s;
-}
-
-.menu-lateral ul li a:hover {
-  color: white;
-}
-
-.menu-lateral ul li {
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-.menu-lateral ul li:hover {
-  background-color: #adf3ab;
-  color: #181717;
-}
-
-/* Conteúdo principal */
-.main-content {
-  display: flex;
-  flex-direction: row;
-  width: 85%;
-}
-
-/* Caixa de informações */
-.info-box {
-  background-color: #fff;
-  color: #333;
-  padding: 40px 30px;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
-  border-right: 1px solid #ccc;
-}
-
-.info-box div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.info-box div i {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #82e07f;
-}
-
-/* Caixa do formulário */
-.form-box {
-  width: 60%;
-  padding: 40px 30px;
-}
-
-.form-box h2 {
-  color: #125959;
-  margin-bottom: 10px;
-}
-
-.form-box p {
-  margin-bottom: 30px;
-  color: #444;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form input,
-form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  resize: none;
-  width: 100%;
-}
-
-form button {
-  background-color: #82e07f;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-form button:hover {
-  background-color: #44c91c;
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .menu-lateral {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #ccc;
-    text-align: center;
-  }
-
-  .menu-lateral ul {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .main-content {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .info-box,
-  .form-box {
-    width: 100%;
-    border-right: none;
-    border-bottom: none;
-  }
-}
 
 /*Pagina obrigado*/
 
