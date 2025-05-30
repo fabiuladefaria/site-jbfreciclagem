@@ -28,7 +28,7 @@ body {
   max-width: 1000px;
 }
 
-.whatsapp{
+.whatsapp {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -43,11 +43,11 @@ body {
   z-index: 1000;
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
   margin-top: 16px;
 }
 
-.whatsapp:hover{
+.whatsapp:hover {
   background-color: #39d325;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .menu-lateral ul li a:hover {
-  color:white;
+  color: white;
 }
 
 .menu-lateral ul li {
@@ -89,10 +89,11 @@ body {
   color: #181717;
 }
 
-/* conteudo principal (informacao e formulario) */
+/* Conteúdo principal */
 .main-content {
   display: flex;
-  width: 80%;
+  flex-direction: row;
+  width: 85%;
 }
 
 /* Caixa de informações */
@@ -197,10 +198,6 @@ form button:hover {
   .form-box {
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .form-box {
     border-bottom: none;
   }
 }
