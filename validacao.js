@@ -1,22 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("formContato");
 
-    form.addEventListener("submit", function (event) {
-        const nome = form.querySelector("input[name='name']").value.trim();
-        const email = form.querySelector("input[name='email']").value.trim();
-        const mensagem = form.querySelector("textarea[name='message']").value.trim();
+  document.getElementById('formContato').addEventListener('submit', function(event) {
+    const name = this.name.value.trim();
+    const email = this.email.value.trim();
+    const message = this.message.value.trim();
 
-        if (!nome || !email || !mensagem) {
-            alert("Por favor, preencha todos os campos.");
-            event.preventDefault();
-            return;
-        }
+    // Função simples para validar email
+    function validarEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert("Por favor, insira um e-mail válido.");
-            event.preventDefault();
-            return;
-        }
-    });
-});
+    if (name === '') {
+      alert('Por favor, digite seu nome.');
+      event.preventDefault();
+      return;
+    }
+
+    if (email === '') {
+      alert('Por favor, digite seu email.');
+      event.preventDefault();
+      return;
+    }
+
+    if (!validarEmail(email)) {
+      alert('Por favor, digite um email válido.');
+      event.preventDefault();
+      return;
+    }
+
+    if (message === '') {
+      alert('Por favor, digite sua mensagem.');
+      event.preventDefault();
+      return;
+    }
+  });
+
