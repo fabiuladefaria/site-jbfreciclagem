@@ -257,7 +257,7 @@ form button:hover {
 }
 
 /* ------------------------------------------- */
-/* Ajustes para telas muito pequenas (ex: iPhones SE antigos) */
+/* Ajustes para telas muito pequenas */
 @media (max-width: 375px) {
     .menu-lateral ul li {
         margin: 0 3px; /* Reduz a margem horizontal entre os itens do menu */
