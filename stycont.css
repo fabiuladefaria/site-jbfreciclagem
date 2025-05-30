@@ -28,6 +28,29 @@ body {
   max-width: 1000px;
 }
 
+.whatsapp{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+.fa-whatsapp{
+  margin-top: 16px;
+}
+
+.whatsapp:hover{
+  background-color: #39d325;
+}
+
 /* Menu lateral */
 .menu-lateral {
   background-color: #82e07f;
@@ -48,11 +71,11 @@ body {
   color: black;
   font-weight: 600;
   font-size: 16px;
-  transition: color 0.3s;
+  transition: color 0.1s;
 }
 
 .menu-lateral ul li a:hover {
-  color: #a0522d;
+  color:white;
 }
 
 .menu-lateral ul li {
@@ -62,8 +85,8 @@ body {
 }
 
 .menu-lateral ul li:hover {
-  background-color: #c5ebd6;
-  color: #125959;
+  background-color: #adf3ab;
+  color: #181717;
 }
 
 /* conteudo principal (informacao e formulario) */
