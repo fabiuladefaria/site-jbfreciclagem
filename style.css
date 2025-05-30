@@ -137,7 +137,7 @@ main {
     bottom: 0px; /* distancia do fundo */
     right: 10px;  /* distancia da direita */
     width: 100px; /* ajuste conforme necessário */
-    opacity: 0.9; /* opcional: leve transparência */
+    opacity: 0.9; /* transparência */
 
     }
 
