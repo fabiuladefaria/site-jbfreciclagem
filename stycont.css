@@ -123,7 +123,7 @@ div > nav > ul > li:hover{ /*mexendo no menu cores e aquele negocio de ficar bra
 }
 
 .form-box h2 {
-  color: #8B4513;
+  color: #125959;
   margin-bottom: 10px;
 }
 
@@ -158,7 +158,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #A0522D;
+  background-color: #44c91c;
 }
 
 /* Responsivo */
