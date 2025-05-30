@@ -6,43 +6,41 @@
     font-family: sans-serif;
 }
 
-/* Corpo da página - Estilos padrão para desktop */
+/* Corpo da página */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: #c5ebd6;
-    padding: 20px; /* Padding padrão para desktop */
+    padding: 20px;
 }
 
-/* Container principal - menu + conteúdo para desktop */
+/* Container principal - menu + conteúdo */
 .container {
     display: flex;
-    flex-direction: row; /* Lado a lado para desktop */
+    flex-direction: row;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    overflow: hidden; /* Garante que nada transborde */
     width: 100%;
-    max-width: 1000px; /* Largura máxima para o container em desktop */
+    max-width: 1000px;
 }
 
-/* Menu lateral - Estilos para desktop */
+
+/* Menu lateral (para desktop) */
 .menu-lateral {
     background-color: #82e07f;
     padding: 40px 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.562);
-    width: 15%; /* Largura fixa para o menu em desktop */
-    display: flex; /* Adicionado para centralizar o ul, se necessário */
-    flex-direction: column; /* Adicionado para centralizar o ul, se necessário */
-    justify-content: center; /* Centraliza verticalmente o ul */
+    width: 15%; /* Largura para desktop */
 }
 
 .menu-lateral ul {
     list-style: none;
     display: flex;
-    flex-direction: column; /* Itens em coluna para desktop */
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -62,7 +60,6 @@ body {
     padding: 5px;
     border-radius: 5px;
     font-size: 1em;
-    text-align: center; /* Centraliza o texto no item do menu */
 }
 
 .menu-lateral ul li:hover {
@@ -70,14 +67,14 @@ body {
     color: #181717;
 }
 
-/* Conteúdo principal - Estilos para desktop */
+/* Conteúdo principal (para desktop) */
 .main-content {
     display: flex;
-    flex-direction: row; /* Caixas lado a lado para desktop */
-    width: 85%; /* Ocupa o restante da largura em desktop */
+    flex-direction: row; /* Para desktop, lado a lado */
+    width: 85%;
 }
 
-/* Caixa de informações - Estilos para desktop */
+/* Caixa de informações (para desktop) */
 .info-box {
     background-color: #fff;
     color: #333;
@@ -87,13 +84,13 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    border-right: 1px solid #ccc; /* Borda entre info e form em desktop */
+    border-right: 1px solid #ccc;
 }
 
 .info-box div {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza itens */
+    align-items: center;
     text-align: center;
 }
 
@@ -103,13 +100,10 @@ body {
     color: #82e07f;
 }
 
-/* Caixa do formulário - Estilos para desktop */
+/* Caixa do formulário (para desktop) */
 .form-box {
     width: 60%; /* Largura para desktop */
     padding: 40px 30px;
-    display: flex; /* Adicionado para flexbox */
-    flex-direction: column; /* Adicionado para flexbox */
-    justify-content: center; /* Centraliza verticalmente o conteúdo */
 }
 
 .form-box h2 {
@@ -153,16 +147,11 @@ form button:hover {
     background-color: #44c91c;
 }
 
-
-/* ============================================================= */
-/* RESPONSIVIDADE - Ajustes para telas menores */
-/* ============================================================= */
-
-/* ------------------------------------------------------------- */
-/* MEDIA QUERY: Para tablets e celulares grandes (até 768px de largura) */
-@media (max-width: 768px) {
+/* ------------------------------------------- */
+/* Responsividade para telas menores (até 600px) */
+@media (max-width: 600px) {
     body {
-        padding: 0; /* Remove padding do body para a barra verde ir até as bordas */
+        padding: 0; /* Remove padding do body para a barra verde do menu ir até as bordas */
         align-items: flex-start; /* Alinha o conteúdo ao topo para o menu ficar visível */
     }
 
@@ -175,13 +164,19 @@ form button:hover {
         overflow: visible; /* Garante que o conteúdo quebre normalmente */
     }
 
-    /* Ajustes específicos para o menu em mobile (barra superior) */
+    /* Ajustes específicos para o menu em mobile */
     .menu-lateral {
         width: 100%; /* Ocupa a largura total */
         border-right: none;
-        border-bottom: none; /* Sem bordas */
-        padding: 20px 0; /* Ajusta o padding horizontal */
+        border-bottom: none; /* Sem borda inferior entre o menu e o container */
+        padding: 20px 0; /* Ajusta o padding horizontal para 0 para os links ficarem mais próximos */
         background-color: #82e07f; /* Mantém a cor de fundo */
+        /* Na imagem, o menu parece estar fora do "container" principal,
+           então podemos fazer com que o container não tenha bordas e sombra,
+           e o menu seja a primeira coisa na tela, sem borda de container.
+           Se o menu precisar ficar dentro do container, você pode reverter o border-radius e box-shadow do .container.
+           Pelo que vejo na imagem, o menu é uma barra verde no topo.
+        */
     }
 
     .menu-lateral ul {
@@ -190,12 +185,12 @@ form button:hover {
         align-items: center; /* Centraliza verticalmente os itens */
         flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
         gap: 0; /* Remove o gap para que o space-around funcione melhor */
-        padding: 0 10px; /* Um pequeno padding para os lados */
+        padding: 0 10px; /* Um pequeno padding para os lados se desejar */
     }
 
     .menu-lateral ul li {
         padding: 5px 10px; /* Ajusta o padding dos itens do menu */
-        font-size: 1em;
+        font-size: 1em; /* Tamanho da fonte normal */
         margin: 0 5px; /* Adiciona uma pequena margem horizontal entre os itens */
     }
     .menu-lateral ul li:hover {
@@ -210,7 +205,7 @@ form button:hover {
         color: white; /* Cor do texto ao passar o mouse */
     }
 
-    /* Conteúdo principal para mobile (caixas empilhadas) */
+    /* Conteúdo principal para mobile */
     .main-content {
         flex-direction: column; /* Empilha as caixas de informação e formulário */
         width: 100%; /* Ocupa a largura total */
@@ -222,25 +217,23 @@ form button:hover {
     .form-box {
         width: 100%; /* Ocupa a largura total */
         border-right: none;
-        border-bottom: none; /* Remove a borda inferior entre as seções */
+        border-bottom: none; /* Remove a borda inferior para as seções */
         padding: 20px; /* Ajusta o padding interno das caixas */
     }
 
     .info-box {
         border-top-left-radius: 10px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 10px; /* Arredonda o canto superior direito */
-        margin-top: 20px; /* Espaço entre o menu e a caixa branca */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a caixa */
+        margin-top: 20px; /* Espaço entre o menu e o conteúdo */
     }
 
     .form-box {
         border-bottom-left-radius: 10px; /* Arredonda o canto inferior esquerdo */
         border-bottom-right-radius: 10px; /* Arredonda o canto inferior direito */
         margin-bottom: 20px; /* Espaço na parte inferior da página */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a caixa */
     }
 
-    /* Ajuste para o espaçamento interno das informações */
+
     .info-box div {
         align-items: center;
         text-align: center;
@@ -249,6 +242,7 @@ form button:hover {
     .info-box div:last-child {
         margin-bottom: 0; /* Remove a margem do último item de informação */
     }
+
 
     /* Títulos e parágrafos centralizados */
     .form-box h2,
@@ -262,21 +256,11 @@ form button:hover {
     }
 }
 
-
-/* ------------------------------------------------------------- */
-/* MEDIA QUERY: Ajustes para celulares menores (até 480px de largura) */
-@media (max-width: 480px) {
-    .menu-lateral ul {
-        flex-wrap: wrap; /* Garante que os itens quebrem se a tela for muito estreita */
-        justify-content: center; /* Centraliza os itens quando há quebra de linha */
-    }
+/* ------------------------------------------- */
+/* Ajustes para telas muito pequenas */
+@media (max-width: 375px) {
     .menu-lateral ul li {
-        margin: 0 8px; /* Ajusta a margem para evitar quebra de linha desnecessária */
-    }
-
-    .info-box {
-        padding: 15px; /* Reduz o padding da caixa de informações */
-        gap: 20px; /* Reduz o gap entre os itens de informação */
+        margin: 0 3px; /* Reduz a margem horizontal entre os itens do menu */
     }
     .info-box div i {
         font-size: 20px; /* Reduz o tamanho do ícone */
@@ -287,51 +271,17 @@ form button:hover {
     .info-box div span {
         font-size: 0.85em; /* Ajusta o tamanho da fonte do texto de endereço/telefone/email */
     }
-
-    .form-box {
-        padding: 15px; /* Reduz o padding do formulário */
-    }
     .form-box h2 {
-        font-size: 1.4em; /* Reduz o tamanho do título do formulário */
-        margin-bottom: 8px;
+        font-size: 1.5em; /* Reduz o tamanho do título do formulário */
     }
     .form-box p {
-        font-size: 0.85em; /* Reduz o tamanho do parágrafo do formulário */
-        margin-bottom: 20px;
-    }
-
-    form input,
-    form textarea {
-        padding: 10px; /* Reduz o padding dos campos do formulário */
-        font-size: 13px;
-    }
-    form button {
-        padding: 8px; /* Reduz o padding do botão */
-        font-size: 13px;
+        font-size: 0.9em; /* Reduz o tamanho do parágrafo do formulário */
     }
 }
 
-
-/* ------------------------------------------------------------- */
-/* MEDIA QUERY: Ajustes para celulares muito pequenos (até 375px de largura) */
-@media (max-width: 375px) {
-    .menu-lateral ul li {
-        margin: 0 5px; /* Reduz a margem horizontal entre os itens do menu para caberem */
-        font-size: 0.9em; /* Diminui um pouco mais a fonte do menu */
-    }
-    .info-box div i {
-        font-size: 18px; /* Reduz o tamanho do ícone para telas muito pequenas */
-    }
-    .info-box div strong {
-        font-size: 0.9em; /* Ajusta a fonte do título */
-    }
-    .info-box div span {
-        font-size: 0.8em; /* Ajusta a fonte do texto */
-    }
-}
 
 .whatsapp {
- 
+  position: fixed;
   width: 60px;
   height: 60px;
   bottom: 40px;
