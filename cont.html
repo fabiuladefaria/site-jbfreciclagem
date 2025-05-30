@@ -1,35 +1,48 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="shortcut icon" href="reciclagem_favicon.io.png" type="image/x-icon">
-    <link rel="stylesheet" href="stycont.css">
+  <meta charset="UTF-8">
+  <title>Fale Conosco</title>
+  <link rel="stylesheet" href="stycont.css">
 </head>
-
-
 <body>
-    <section>
-        <h2>Fale conosco</h2>
-        <form id="formContato" action="https://api.staticforms.xyz/submit" method="post">
 
-            <label>Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" >
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" >
-            <label>Mensagem</label>
-            <textarea name="message" cols="30" rows="10"  placeholder="Digite sua mensagem" ></textarea>
-            <button type="submit">Enviar</button>
+  <div class="container">
+    <!-- Informações -->
+    <div class="info-box">
+      <div>
+        <i>📍</i>
+        <strong>Endereço</strong>
+        <span>Nome da rua, número123<br>Bairro Cidade</span>
+      </div>
+      <div>
+        <i>📞</i>
+        <strong>Telefone</strong>
+        <span>+00 00 1234 5678<br>+00 00 1234 5678</span>
+      </div>
+      <div>
+        <i>✉️</i>
+        <strong>Email</strong>
+        <span>seuemail@exemplo.com<br>outra@email.com</span>
+      </div>
+    </div>
 
-             <input type="hidden" name="apiKey" value="sf_ckdd8b92e4gj2kaihfj6g2ad">
-             <input type="hidden" name="redirectTo" value="https://fabiuladefaria.github.io/site-jbfreciclagem/obg.html">
+    <!-- Formulário -->
+    <div class="form-box">
+      <h2>Fale conosco</h2>
+      <p>Se você tiver dúvidas ou precisar de ajuda, nos envie uma mensagem. É um prazer atendê-lo!</p>
 
-        </form>
+      <form id="formContato" action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
+        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off">
+        <textarea name="message" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+        <button type="submit">Enviar</button>
 
-    </section>
-
-<script src="validacao.js"></script>
-
+        <input type="hidden" name="apiKey" value="sf_ckdd8b92e4gj2kaihfj6g2ad">
+        <input type="hidden" name="redirectTo" value="https://fabiuladefaria.github.io/site-jbfreciclagem/obg.html">
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>

@@ -1,157 +1,110 @@
-@charset "UTF-8";
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url("imagens/lata-aluminio-reciclagem.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /*tamanho dentro do fundo */
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d2b49c;
 }
 
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 900px;
+  max-width: 95%;
+}
+
+.info-box {
+  background-color: #fff;
+  color: #333;
+  padding: 40px 30px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  border-right: 1px solid #ccc;
+}
+
+.info-box div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info-box div i {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #8B4513;
+}
+
+.form-box {
+  width: 60%;
+  padding: 40px 30px;
+}
+
+.form-box h2 {
+  color: #8B4513;
+  margin-bottom: 10px;
+}
+
+.form-box p {
+  margin-bottom: 30px;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+}
+
+form button {
+  background-color: #8B4513;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #A0522D;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    padding: 10px 45px;
-    background-color: #73D99F ;
-    width: 500px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
-}
+  }
 
-section h2{
-    color: black;
-    font-size: 2.5rem;
-    margin: 2rem;
-
-}
-
-section form{
-    display: flex;
-    flex-direction: column;
+  .info-box, .form-box {
     width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
 
-}
-
-form label{
-    color: black;
-    font-size: 17px;
-    margin-bottom: 4px;
-
-}
-
-form input{
-    padding: 15px;
-    outline: none;
-    border: 0;
-    margin-bottom: 20px;
-    font-size: 15px;
-    transition: all 0.5s;
-
-}
-
-form input:focus{
-    border-radius: 16px;
-}
-
-form textarea{
-    padding: 10px;
-    outline: none;
-    border: 0;
-    font-size: 15px;
-    margin-bottom: 30px;
-    transition: all 0.5s;
-}
-
-form textarea:focus{
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    
-    border: px solid black;
-    
-    transition: all 1s;
-    margin-bottom: 20px;
-}
-
-form button:hover{
-    background-color: #c5ebd6;
-    color: #101026;
-     
-}
-
-form button{
-    font-size: 14px;
-    padding: 8px;
-    border-radius: 20px;
-}
-
-
-/*Pagina obrigado*/
-
-.main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100hv;
-    flex-direction: column;
-}
-
-.text{
-    font-size: 45px;
-    color: white;
-    margin-bottom: 30px;
-}
-
-.paragrafo{
-    color: white;
-    margin-bottom: 50px;
-}
-
-.btn{
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-    color: #101026;
-    font-size: 18px;
-    transition: all 0.5s;
-}
-
-.btn:hover{
-    border-radius: 16px;
-}
-
-#obrigado{
-    background-color: #73D99F;
-    padding: 5%;               
-    width: 90%;
-    max-width: 600px;          /* Limita a largura máxima */
-    height: auto;              /* Deixa a altura se ajustar ao conteúdo */
-    min-height: 300px;         /* altura mínima */
-    border-radius: 10px;
-    margin: 0 auto;            /* Centraliza horizontalmente */
-    box-sizing: border-box;    
-}
-
-@media (max-width: 600px) { /*para deixar o contato responsivo*/
-    section {
-        width: 90%;            /*  telas menores */
-        padding: 20px;         /* reduz o padding */
-    }
-
-    section h2 {
-        font-size: 2rem;       /* ajusta o tamanho do h2 */
-    }
-
+  .form-box {
+    border-bottom: none;
+  }
 }
