@@ -141,6 +141,79 @@ main {
 
     }
 
+ .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+/* Carrossel */
+.carrossel {
+  flex: 1 1 300px;
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagens {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imagens img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+/* Botões do carrossel */
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-prev { left: 5px; }
+.btn-next { right: 5px; }
+
+/* Texto */
+.texto {
+  flex: 1 1 300px;
+  max-width: 500px;
+  margin-top: 20px; /* aumenta ou diminui conforme quiser */
+  
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carrossel, .texto {
+    max-width: 100%;
+  }
+}
+
 main p { /*geral*/
     margin:15px 0px;
     text-align: justify;
@@ -186,13 +259,17 @@ main  h1{
     font-size: 1.8em;
 
 }
-main h2{
-    font-family: var(--fonte-times);
-    padding: 0px 0px 10px 0px;
-    background-image: linear-gradient(to right, #73D99F, transparent);
-    color: rgba(0, 0, 0, 0.753);
-    text-indent: 8px;
-    font-size: 1.6em;
+main h2 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.5em;
+    color: var(--cor1);
+    margin: 10px 0 10px 0;
+    padding-left: 20px;
+    border-left: 6px solid var(--cor2);
+    background-color: var(--cor4);
+    line-height: 1.4em;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+    letter-spacing: 0.5px;
 }
 
 
