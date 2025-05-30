@@ -256,28 +256,7 @@ form button:hover {
     }
 }
 
-/* ------------------------------------------- */
-/* Ajustes para telas muito pequenas */
-@media (max-width: 375px) {
-    .menu-lateral ul li {
-        margin: 0 3px; /* Reduz a margem horizontal entre os itens do menu */
-    }
-    .info-box div i {
-        font-size: 20px; /* Reduz o tamanho do ícone */
-    }
-    .info-box div strong {
-        font-size: 0.95em; /* Ajusta o tamanho da fonte do título */
-    }
-    .info-box div span {
-        font-size: 0.85em; /* Ajusta o tamanho da fonte do texto de endereço/telefone/email */
-    }
-    .form-box h2 {
-        font-size: 1.5em; /* Reduz o tamanho do título do formulário */
-    }
-    .form-box p {
-        font-size: 0.9em; /* Reduz o tamanho do parágrafo do formulário */
-    }
-}
+
 
 
 .whatsapp {
