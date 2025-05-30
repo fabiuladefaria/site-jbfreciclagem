@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Fale Conosco</title>
-  <link rel="shortcut icon" href="reciclagem_favicon.io.png" type="image/x-icon">
-  <link rel="stylesheet" href="stycont.css">
+  <link rel="shortcut icon" href="reciclagem_favicon.io.png" type="image/x-icon" />
+  <link rel="stylesheet" href="stycont.css" />
 </head>
 
 <body>
   <div class="container">
-  <!-- Menu vertical -->
-  <nav class="menu-lateral">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="cont.html">Contato</a></li>
-      
-    </ul>
-  </nav>
-  
-  
+    <!-- Menu vertical -->
+    <nav class="menu-lateral">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="cont.html">Contato</a></li>
+      </ul>
+    </nav>
 
-  <div class="container">
-    <!-- Informações -->
-    <div class="info-box">
-      <div>
-        <i>📍</i>
-        <strong>Endereço</strong>
-        <span>Av. Alberto Vieira Romão, 2246 <br>Distrito Industrial – Alfenas – MG</span>
+    <div class="main-content">
+      <!-- Informações -->
+      <div class="info-box">
+        <div>
+          <i>📍</i>
+          <strong>Endereço</strong>
+          <span>Av. Alberto Vieira Romão, 2246 <br />Distrito Industrial – Alfenas – MG</span>
+        </div>
+        <div>
+          <i>📞</i>
+          <strong>Telefone</strong>
+          <span>(35) 98817-4416</span>
+        </div>
+        <div>
+          <i>✉️</i>
+          <strong>Email</strong>
+          <span>reciclagemjbf@gmail.com</span>
+        </div>
       </div>
-      <div>
-        <i>📞</i>
-        <strong>Telefone</strong>
-        <span>(35) 98817-4416</span>
+
+      <!-- Formulário -->
+      <div class="form-box">
+        <h2>Fale conosco</h2>
+        <p>Se você tiver dúvidas ou precisar de ajuda, nos envie uma mensagem. É um prazer atendê-lo!</p>
+
+        <form id="formContato" action="https://api.staticforms.xyz/submit" method="post">
+          <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" />
+          <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" />
+          <textarea name="message" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+          <button type="submit">Enviar</button>
+
+          <input type="hidden" name="apiKey" value="sf_ckdd8b92e4gj2kaihfj6g2ad" />
+          <input
+            type="hidden"
+            name="redirectTo"
+            value="https://fabiuladefaria.github.io/site-jbfreciclagem/obg.html"
+          />
+        </form>
       </div>
-      <div>
-        <i>✉️</i>
-        <strong>Email</strong>
-        <span>reciclagemjbf@gmail.com</span>
-      </div>
-    </div>
-
-    <!-- Formulário -->
-    <div class="form-box">
-      <h2>Fale conosco</h2>
-      <p>Se você tiver dúvidas ou precisar de ajuda, nos envie uma mensagem. É um prazer atendê-lo!</p>
-
-      <form id="formContato" action="https://api.staticforms.xyz/submit" method="post">
-        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
-        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off">
-        <textarea name="message" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
-        <button type="submit">Enviar</button>
-
-        <input type="hidden" name="apiKey" value="sf_ckdd8b92e4gj2kaihfj6g2ad">
-        <input type="hidden" name="redirectTo" value="https://fabiuladefaria.github.io/site-jbfreciclagem/obg.html">
-      </form>
     </div>
   </div>
-  
-<script src="validacao.js"></script>
 
+  <script src="validacao.js"></script>
 </body>
 </html>

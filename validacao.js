@@ -41,19 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Carrossel
   const imagens = document.getElementById('imagens');
   if (imagens) {
-    const total = imagens.children.length;
-    let indice = 0;
+    window.totalImagens = imagens.children.length;
+    window.indiceImagem = 0;
 
-    function mover(direcao) {
-      indice = (indice + direcao + total) % total;
-      imagens.style.transform = `translateX(-${indice * 100}%)`;
+    window.mover = function(direcao) {
+      window.indiceImagem = (window.indiceImagem + direcao + window.totalImagens) % window.totalImagens;
+      imagens.style.transform = `translateX(-${window.indiceImagem * 100}%)`;
     }
 
     // Rotação automática a cada 4 segundos
     setInterval(() => {
       mover(1);
     }, 4000);
-
-    // Se quiser, pode adicionar controles manuais aqui...
   }
 });

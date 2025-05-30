@@ -146,10 +146,7 @@ main {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 30px;
-  padding: 0 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+  padding: 20px;
 }
 
 /* Carrossel */
@@ -158,11 +155,13 @@ main {
   max-width: 500px;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .imagens {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .imagens img {
@@ -198,8 +197,7 @@ main {
 .texto {
   flex: 1 1 300px;
   max-width: 500px;
-  margin-top: 20px; /* aumenta ou diminui conforme quiser */
-  
+  margin-top: 20px;
 }
 
 /* Responsivo */
@@ -213,6 +211,7 @@ main {
     max-width: 100%;
   }
 }
+
 
 main p { /*geral*/
     margin:15px 0px;

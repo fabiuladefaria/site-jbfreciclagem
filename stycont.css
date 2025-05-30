@@ -1,3 +1,4 @@
+/* Reset e configurações globais */
 * {
   margin: 0;
   padding: 0;
@@ -5,28 +6,34 @@
   font-family: sans-serif;
 }
 
+/* Corpo da página */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: #c5ebd6;
-}
-.container {
-  display: grid;
-  grid-template-columns: 20% 40% 40%;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  overflow: hidden;
-  width: 1000px;
-  max-width: 95%;
+  padding: 20px;
 }
 
+/* Container principal - menu + conteúdo */
+.container {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Menu lateral */
 .menu-lateral {
   background-color: #82e07f;
   padding: 40px 20px;
   border-right: 1px solid rgba(0, 0, 0, 0.562);
+  width: 15%;
 }
 
 .menu-lateral ul {
@@ -34,64 +41,38 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-left: 0;
 }
 
 .menu-lateral ul li a {
   text-decoration: none;
-  color:black;
+  color: black;
   font-weight: 600;
   font-size: 16px;
   transition: color 0.3s;
 }
 
 .menu-lateral ul li a:hover {
-  color: #A0522D;
+  color: #a0522d;
 }
 
-div > nav > ul > li{ /*para os links que estao dentro dele*/
-    color: white;
-    padding: 5px;
-    text-decoration: none;
-    border-radius: 5px;/*arredondar o negocinho branco*/
-    /*transition-duration: .5s; serve pra ter um delay ao passar o mouse*/
-    font-size: 1em;
-} 
-
-div > nav > ul > li:hover{ /*mexendo no menu cores e aquele negocio de ficar branco*/
-    background-color: #c5ebd6;
-    color: #125959;
-    
+.menu-lateral ul li {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1em;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-lateral, .info-box, .form-box {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .form-box {
-    border-bottom: none;
-  }
+.menu-lateral ul li:hover {
+  background-color: #c5ebd6;
+  color: #125959;
 }
 
-
-.container {
+/* conteudo principal (informacao e formulario) */
+.main-content {
   display: flex;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  overflow: hidden;
-  width: 900px;
-  max-width: 95%;
+  width: 80%;
 }
 
+/* Caixa de informações */
 .info-box {
   background-color: #fff;
   color: #333;
@@ -117,6 +98,7 @@ div > nav > ul > li:hover{ /*mexendo no menu cores e aquele negocio de ficar bra
   color: #82e07f;
 }
 
+/* Caixa do formulário */
 .form-box {
   width: 60%;
   padding: 40px 30px;
@@ -138,12 +120,14 @@ form {
   gap: 15px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
   resize: none;
+  width: 100%;
 }
 
 form button {
@@ -161,13 +145,33 @@ form button:hover {
   background-color: #44c91c;
 }
 
-/* Responsivo */
+/* Responsividade para telas menores */
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
   }
 
-  .info-box, .form-box {
+  .menu-lateral {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .menu-lateral ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-box,
+  .form-box {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #ccc;
