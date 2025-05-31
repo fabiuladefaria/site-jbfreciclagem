@@ -32,7 +32,7 @@ body {
 
 /* Menu lateral (para pc) */
 .menu-lateral {
-    background-color: #C5EBD6;
+    background-color: #31db8c;
     padding: 40px 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.562);
     width: 15%; /* Largura para pc */
@@ -107,7 +107,7 @@ body {
 }
 
 .form-box h2 {
-    color: #125959;
+    color: #14c270;
     margin-bottom: 10px;
 }
 
@@ -169,7 +169,7 @@ form button:hover {
         border-right: none;
         border-bottom: none; /* Sem borda inferior entre o menu e o container */
         padding: 20px 0; /* Ajusta o padding horizontal para 0 para os links ficarem mais próximos */
-        background-color: #C5EBD6; /* cor de fundo */
+        background-color: #31db8c; /* cor de fundo */
 
     }
 

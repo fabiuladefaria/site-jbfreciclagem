@@ -214,7 +214,7 @@ main {
 
   .texto {
     margin-top: 5px; /* Diminui o espaçamento entre carrossel e texto */
-    padding: 0 10px; /* Dá um respiro lateral */
+    /*padding: 0 10px; /* Dá um respiro lateral */
 
   }
 
