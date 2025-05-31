@@ -207,14 +207,16 @@ main {
     align-items: center;
   }
 
-  .carrossel, .texto {
+  .carrossel {
     max-width: 100%;
+    padding-bottom:5px ;
   }
 
 
   .texto {
-    margin-top: 5px; /* Diminui o espaçamento entre carrossel e texto */
+    margin-top: 0px; /* Diminui o espaçamento entre carrossel e texto */
     /*padding: 0 10px; /* Dá um respiro lateral */
+     max-width: 100%;
 
   }
 
@@ -223,7 +225,7 @@ main {
   }
 
   h2 {
-    margin-top: 10px; /* <- Diminui o espaço antes do próximo título */
+    margin-top: 0px; /* <- Diminui o espaço antes do próximo título */
   }
 }
 
