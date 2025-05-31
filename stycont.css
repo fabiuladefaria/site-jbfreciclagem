@@ -32,7 +32,7 @@ body {
 
 /* Menu lateral (para pc) */
 .menu-lateral {
-    background-color: #6ccfa1;
+    background-color: #C5EBD6;
     padding: 40px 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.562);
     width: 15%; /* Largura para pc */
@@ -64,23 +64,22 @@ body {
 }
 
 .menu-lateral ul li:hover {
-    background-color: #adf3ab;
     color: #181717;
 }
 
-/* Conteúdo principal (para desktop) */
+/* Conteúdo principal (para pc) */
 .main-content {
     display: flex;
-    flex-direction: row; /* Para desktop, lado a lado */
+    flex-direction: row; /* Para pc, lado a lado */
     width: 85%;
 }
 
-/* Caixa de informações (para desktop) */
+/* Caixa de informações (para pc) */
 .info-box {
     background-color: #fff;
     color: #333;
     padding: 40px 30px;
-    width: 40%; /* Largura para desktop */
+    width: 40%; /* Largura par pc */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,9 +100,9 @@ body {
     color: #82e07f;
 }
 
-/* Caixa do formulário (para desktop) */
+/* Caixa do formulário (para pc) */
 .form-box {
-    width: 60%; /* Largura para desktop */
+    width: 60%; /* Largura para pc */
     padding: 40px 30px;
 }
 
@@ -148,11 +147,11 @@ form button:hover {
     background-color: #14c270;
 }
 
-/* Responsividade para telas menores (até 600px) */
+/* Responsividade para telas pequenass (até 600px) */
 @media (max-width: 600px) {
     body {
-        padding: 0; /* Remove padding do body para a barra verde do menu ir até as bordas */
-        align-items: flex-start; /* Alinha o conteúdo ao topo para o menu ficar visível */
+        padding: 0; /* remove padding do body para a barra verde do menu ir até as bordas */
+        align-items: flex-start; /* alinha o conteudo ao topo para o menu ficar visível */
     }
 
     .container {
@@ -170,7 +169,7 @@ form button:hover {
         border-right: none;
         border-bottom: none; /* Sem borda inferior entre o menu e o container */
         padding: 20px 0; /* Ajusta o padding horizontal para 0 para os links ficarem mais próximos */
-        background-color: #6ccfa1; /* cor de fundo */
+        background-color: #C5EBD6; /* cor de fundo */
 
     }
 
@@ -200,14 +199,14 @@ form button:hover {
         color: white; /* Cor do texto ao passar o mouse */
     }
 
-    /* Conteúdo principal para mobile */
+    /* Conteúdo principal para celular */
     .main-content {
         flex-direction: column; /* Empilha as caixas de informação e formulário */
         width: 100%; /* Ocupa a largura total */
         padding: 0; /* Remove padding extra para o conteúdo interno gerenciar */
     }
 
-    /* Caixas de informação e formulário para mobile */
+    /* Caixas de informação e formulário para celular */
     .info-box,
     .form-box {
         width: 100%; /* Ocupa a largura total */
