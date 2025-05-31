@@ -213,7 +213,7 @@ main {
 
 
   .texto {
-    margin-top: 10px; /* Diminui o espaçamento entre carrossel e texto */
+    margin-top: 5px; /* Diminui o espaçamento entre carrossel e texto */
     padding: 0 10px; /* Dá um respiro lateral */
 
   }
@@ -223,7 +223,7 @@ main {
   }
 
   h2 {
-    margin-top: 20px; /* <- Diminui o espaço antes do próximo título */
+    margin-top: 10px; /* <- Diminui o espaço antes do próximo título */
   }
 }
 
