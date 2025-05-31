@@ -12,7 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #34A18C;
+    background-image: url("imagens/lata-aluminio-reciclagem.jpg");
+    /*background-color: #34A18C;*/
     padding: 20px;
 }
 
@@ -29,12 +30,12 @@ body {
 }
 
 
-/* Menu lateral (para desktop) */
+/* Menu lateral (para pc) */
 .menu-lateral {
     background-color: #6ccfa1;
     padding: 40px 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.562);
-    width: 15%; /* Largura para desktop */
+    width: 15%; /* Largura para pc */
 }
 
 .menu-lateral ul {

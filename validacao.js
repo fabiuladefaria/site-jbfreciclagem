@@ -38,20 +38,57 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Carrossel
-  const imagens = document.getElementById('imagens');
-  if (imagens) {
-    window.totalImagens = imagens.children.length;
-    window.indiceImagem = 0;
+  /*Carrossel*/
+const imagens = document.getElementById('imagens');
+const imagensOriginais = Array.from(imagens.children);
 
-    window.mover = function(direcao) {
-      window.indiceImagem = (window.indiceImagem + direcao + window.totalImagens) % window.totalImagens;
-      imagens.style.transform = `translateX(-${window.indiceImagem * 100}%)`;
+// Clona primeira e última imagem para loop infinito
+const primeiraClone = imagensOriginais[0].cloneNode(true);
+const ultimaClone = imagensOriginais[imagensOriginais.length - 1].cloneNode(true);
+
+imagens.appendChild(primeiraClone);
+imagens.insertBefore(ultimaClone, imagens.firstChild);
+
+let indiceImagem = 1; // Começa na imagem "real" 1
+const totalImagens = imagens.children.length;
+
+imagens.style.transform = `translateX(-${indiceImagem * 100}%)`;
+
+let podeMover = true;
+let intervalo;
+
+function mover(direcao) {
+  if (!podeMover) return;
+  podeMover = false;
+
+  indiceImagem += direcao;
+  imagens.style.transition = 'transform 0.5s ease-in-out';
+  imagens.style.transform = `translateX(-${indiceImagem * 100}%)`;
+
+  setTimeout(() => {
+    // Se estiver no clone da última imagem, volta pra real 1
+    if (indiceImagem === totalImagens - 1) {
+      imagens.style.transition = 'none';
+      indiceImagem = 1;
+      imagens.style.transform = `translateX(-${indiceImagem * 100}%)`;
     }
+    // Se estiver no clone da primeira imagem, volta pra real última
+    if (indiceImagem === 0) {
+      imagens.style.transition = 'none';
+      indiceImagem = totalImagens - 2;
+      imagens.style.transform = `translateX(-${indiceImagem * 100}%)`;
+    }
+    podeMover = true;
+  }, 500);
 
-    // Rotação automática a cada 4 segundos
-    setInterval(() => {
-      mover(1);
-    }, 4000);
-  }
+  // Reinicia o intervalo automático sempre que mexer manualmente
+  clearInterval(intervalo);
+  intervalo = setInterval(() => mover(1), 4000);
+}
+
+// Começa o slide automático
+intervalo = setInterval(() => mover(1), 4000);
+
+// Expõe mover no window para seus botões funcionarem
+window.mover = mover;
 });
