@@ -201,7 +201,7 @@ main {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .flex-container {
     flex-direction: column;
     align-items: center;
@@ -209,6 +209,20 @@ main {
 
   .carrossel, .texto {
     max-width: 100%;
+  }
+
+  .texto {
+    margin-top: 10px; /* Diminui o espaçamento entre carrossel e texto */
+    padding: 0 10px; /* Dá um respiro lateral */
+
+  }
+
+  .texto p {
+    margin: 8px 0; /* Reduz o espaço entre os parágrafos */
+  }
+
+  h2 {
+    margin-top: 20px; /* <- Diminui o espaço antes do próximo título */
   }
 }
 
