@@ -100,8 +100,6 @@ window.gtranslateSettings = {
   languages: ["pt", "en"],
   wrapper_selector: ".gtranslate_wrapper",
   flag_size: 16,
-  horizontal_position: "right",
-  vertical_position: "top",
   alt_flags: {
     pt: "brazil"
   }

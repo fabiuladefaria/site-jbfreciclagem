@@ -116,6 +116,13 @@ nav > a:hover{ /*mexendo no menu cores e aquele negocio de ficar branco*/
     
 }
 
+.gtranslate_wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
 main { 
     
     min-width: 300px;
