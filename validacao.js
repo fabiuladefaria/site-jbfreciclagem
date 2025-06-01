@@ -89,7 +89,7 @@ function mover(direcao) {
 // Começa o slide automático
 intervalo = setInterval(() => mover(1), 4000);
 
-// Expõe mover no window para seus botões funcionarem
+// Expõe mover no window para botões funcionarem
 window.mover = mover;
 });
 
