@@ -92,3 +92,22 @@ intervalo = setInterval(() => mover(1), 4000);
 // Expõe mover no window para seus botões funcionarem
 window.mover = mover;
 });
+
+
+/*idioma*/
+window.gtranslateSettings = {
+  default_language: "pt",
+  languages: ["pt", "en"],
+  wrapper_selector: ".gtranslate_wrapper",
+  flag_size: 16,
+  horizontal_position: "right",
+  vertical_position: "top",
+  alt_flags: {
+    pt: "brazil"
+  }
+};
+
+const script = document.createElement("script");
+script.src = "https://cdn.gtranslate.net/widgets/latest/popup.js";
+script.defer = true;
+document.body.appendChild(script);
