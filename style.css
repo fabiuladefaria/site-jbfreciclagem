@@ -67,25 +67,25 @@ header > h1 {
     font-family: var(--fonte-times);
     /*margin-bottom: 10px;*/
     text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.253); 
-    font-size: 3em;
+    font-size: 2em;
     
     
     
 }
 
-header > h3{
+/*header > h3{
     color: white;
     font-family: var(--fonte-times);
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253); /*sombra*/
-    padding-bottom: 10px; /*mudei aqui*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253); /*sombra
+    padding-bottom: 10px; /*mudei aqui
     height: 50px;
-    letter-spacing: 1.7px; /*espaçamento entre as letras*/
+    letter-spacing: 1.7px; /*espaçamento entre as letras
     position: absolute;
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
 
-}
+}*/
 
 
 nav{
