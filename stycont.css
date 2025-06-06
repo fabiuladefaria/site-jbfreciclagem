@@ -21,7 +21,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("imagens/lata-aluminio-reciclagem.jpg");
+    background-image: url("imagens/latinha\ ia.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; /*tamanho dentro do fundo */
+
     /*background-color: #34A18C;*/
     padding: 20px;
 }
