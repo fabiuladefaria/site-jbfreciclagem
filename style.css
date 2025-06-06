@@ -361,8 +361,8 @@ aside {
 @media screen and (max-width:600px){ /*para responsivo ate 600px a logo desde mais um pouco*/
     .logo {
         position: absolute; /* ou fixed, dependendo do contexto */
-        top: 77px;
-        left: 50%;
-        transform: translateX(-45%);
+        top: 30px;
+        left: 25%;
+        transform: translateX(-50%);
     }
 }
