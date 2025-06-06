@@ -363,6 +363,6 @@ aside {
         position: absolute; /* ou fixed, dependendo do contexto */
         top: 77px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-30%);
     }
 }
