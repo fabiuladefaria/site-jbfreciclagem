@@ -67,6 +67,7 @@ header > h1 {
     font-family: var(--fonte-times);
     /*margin-bottom: 10px;*/
     text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.253); 
+    font-size: 3em;
     
     
     
