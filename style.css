@@ -30,8 +30,8 @@ body{
 
 header{
    
-    background-image: url("imagens/jbfg.jpeg");
-    background-position: center right;
+    background-image: url("imagens/equipe.jpeg");
+    background-position:  left;
     background-repeat: no-repeat;
     background-size: cover; /*tamanho dentro do fundo */
 
@@ -107,6 +107,7 @@ nav > a{ /*para os links que estao dentro dele*/
     border-radius: 5px;/*arredondar o negocinho branco*/
     /*transition-duration: .5s; serve pra ter um delay ao passar o mouse*/
     font-size: 1em;
+    background-color: #34A18C;
    
 }
 
