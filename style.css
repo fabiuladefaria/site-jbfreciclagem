@@ -92,7 +92,7 @@ nav{
    
     position: absolute;
     left: 0%;
-    bottom: 10%;
+    bottom: 8%;
     /*padding: 100px 20px 10px 10px; /*para o menu nao ficar tao grudado nas bordinhas*/ 
     font-weight: bold; /*negrito*/
     width: 400px; 
@@ -359,9 +359,10 @@ aside {
 }
 
 @media screen and (max-width:600px){ /*para responsivo ate 600px a logo desde mais um pouco*/
-    .logo{
+    .logo {
+        position: absolute; /* ou fixed, dependendo do contexto */
         top: 77px;
-        
+        left: 50%;
+        transform: translateX(-50%);
     }
-    
 }
