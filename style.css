@@ -80,7 +80,7 @@ header > h3{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253); /*sombra
     padding-bottom: 10px; /*mudei aqui
     height: 50px;
-    letter-spacing: 1.7px; /*espaçamento entre as letras
+    letter-spacing: 1.7px; espaçamento entre as letras
     position: absolute;
     left: 50%;
     top: 45%;
@@ -236,6 +236,10 @@ main {
 
   h2 {
     margin-top: 0px; /* <- Diminui o espaço antes do próximo título */
+  }
+
+  h3{
+    font-size:1em ;
   }
 }
 
