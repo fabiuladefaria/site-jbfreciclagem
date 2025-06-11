@@ -73,8 +73,9 @@ header > h1 {
     
 }
 
-/*header > h3{
+header > h3{
     color: white;
+    font-size: 1.6em;
     font-family: var(--fonte-times);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.253); /*sombra
     padding-bottom: 10px; /*mudei aqui
@@ -83,9 +84,9 @@ header > h1 {
     position: absolute;
     left: 50%;
     top: 45%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
 
-}*/
+}
 
 
 nav{
