@@ -369,7 +369,7 @@ aside {
         top: 10px;
         left: 25%;
         transform: translateX(-50%);
-        width: 120px;
+        width: 12px;
         height: auto; /* mantém proporção */
     }
 }
