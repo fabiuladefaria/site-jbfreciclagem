@@ -239,7 +239,7 @@ main {
   }
 
   h3{
-    font-size:1em ;
+    font-size:  ;
   }
 }
 
@@ -369,7 +369,7 @@ aside {
         top: 10px;
         left: 25%;
         transform: translateX(-50%);
-        width: 170px;
+        width: 120px;
         height: auto; /* mantém proporção */
     }
 }
