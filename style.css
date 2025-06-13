@@ -35,7 +35,6 @@ header{
     background-repeat: no-repeat;
     background-size: cover; /*tamanho dentro do fundo */
 
-    /*background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));*/
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
@@ -65,7 +64,6 @@ header > p{
 header > h1 {
     color: white;
     font-family: var(--fonte-times);
-    /*margin-bottom: 10px;*/
     text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.253); 
     
     
@@ -115,7 +113,6 @@ nav{
     position: absolute;
     left: 0%;
     bottom: 8%;
-    /*padding: 100px 20px 10px 10px; /*para o menu nao ficar tao grudado nas bordinhas*/ 
     font-weight: bold; /*negrito*/
     width: 400px; 
     height: 8px;
@@ -128,7 +125,6 @@ nav > a{ /*para os links que estao dentro dele*/
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;/*arredondar o negocinho branco*/
-    /*transition-duration: .5s; serve pra ter um delay ao passar o mouse*/
     font-size: 1em;
     background-color: #34A18C;
    
@@ -155,8 +151,6 @@ main {
     background-color: white;
     margin-bottom: 0px; /*para nao grudar no footer*/
     padding: 20px; /*tava muito grudado o texto com a borda*/
-   /* border-bottom-left-radius: 10px;/*arredondamento nas pontas debaixo esquerda*/
-    /*border-bottom-right-radius: 10px;/*arredondamento nas pontas direita*/
     border-radius: 5px;
     box-shadow: 0px 0px 10px black;/*sombra*/ 
     position: relative; /* Para posicionar o filho absoluto dentro dele */
@@ -167,7 +161,7 @@ main {
     position: absolute;
     bottom: 0px; /* distancia do fundo */
     right: 10px;  /* distancia da direita */
-    width: 100px; /* ajuste conforme necessário */
+    width: 100px;
     opacity: 0.9; /* transparência */
 
     }
@@ -256,7 +250,7 @@ main {
   }
 
   h2 {
-    margin-top: 0px; /* <- Diminui o espaço antes do próximo título */
+    margin-top: 0px; /*  Diminui o espaço antes do próximo título */
   }
 
   .h3efeito{
@@ -384,7 +378,7 @@ aside {
   text-decoration: underline;
 }
 
-@media screen and (max-width:600px){ /*para responsivo ate 600px a logo desde mais um pouco*/
+@media screen and (max-width:600px){ /*para responsivo ate 600px a logo desce mais um pouco*/
     .logo {
         position: absolute; /* ou fixed, dependendo do contexto */
         top: 10px;

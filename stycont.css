@@ -25,7 +25,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover; /*tamanho dentro do fundo */
 
-    /*background-color: #34A18C;*/
+    
     padding: 20px;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 
-/* Menu lateral (para pc) */
+/* Menu lateral para pc */
 .menu-lateral {
     background-color: #31db8c;
     padding: 40px 20px;
@@ -79,7 +79,7 @@ body {
     color: #181717;
 }
 
-/* Conteúdo principal (para pc) */
+/* Conteúdo principal para pc */
 .main-content {
     display: flex;
     flex-direction: row; /* Para pc, lado a lado */
