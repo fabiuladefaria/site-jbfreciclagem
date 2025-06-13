@@ -238,8 +238,8 @@ main {
     margin-top: 0px; /* <- Diminui o espaço antes do próximo título */
   }
 
-  h3{
-    font-size:4em ;
+  .h3efeito{
+    font-size:1em ;
   }
 }
 
