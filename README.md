@@ -1,4 +1,4 @@
-# ♻️ Site Informativo - Empresa de Reciclagem
+## ♻️ Site Informativo - Empresa de Reciclagem
 
 Este repositório contém o desenvolvimento do site informativo sobre uma **empresa de reciclagem**, criado como projeto de fim de semestre da disciplina de Desenvolvimento de Sistemas.
 
