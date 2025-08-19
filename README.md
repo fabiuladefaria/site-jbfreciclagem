@@ -23,5 +23,3 @@ O site tem como objetivo apresentar a empresa, seus serviços e valores, além d
    ```bash
    git clone https://github.com/usuario/nome-do-repositorio.git
 
-# site-jbfreciclagem
-Site JBF reciclagem
