@@ -18,8 +18,3 @@ O site tem como objetivo apresentar a empresa, seus serviços e valores, além d
 - **Quem Somos**: equipe e propósito  
 - **Contatos**: formulário para contato com integração ao StaticForms  
 
-## 🚀 Como visualizar
-1. Baixe ou clone este repositório:  
-   ```bash
-   git clone https://github.com/usuario/nome-do-repositorio.git
-
