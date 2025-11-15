@@ -1,6 +1,6 @@
 ## ♻️ Site Informativo - Empresa de Reciclagem
 
-Este repositório contém o desenvolvimento do site informativo sobre uma **empresa de reciclagem**, criado como projeto de fim de semestre da disciplina de Desenvolvimento de Sistemas.
+Este repositório contém o desenvolvimento do site informativo sobre uma **empresa de reciclagem**, criado como projeto de fim de semestre da disciplina de Desenvolvimento de Sistemas, sendo meu primeiro contato com web design.
 
 ## 🌍 Objetivo
 O site tem como objetivo apresentar a empresa, seus serviços e valores, além de conscientizar sobre a importância da reciclagem e oferecer informações úteis aos clientes.
